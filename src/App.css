@@ -4,8 +4,12 @@ header {
     align-items: center;
     background: #fff;
     padding: 0.6em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
   }
-  
   header nav a {
     text-decoration: none;
     color: var(--secondary);
@@ -17,22 +21,18 @@ header {
     justify-content: right;
     text-align: right;
   }
-
 .header__links {
     margin-left: auto;
 }
-  
   header nav a.active {
     color: var(--primary);
   }
-  
 .header__logo img {
     width: 6.2em;
     justify-content: left;
     margin-left: 0.4em;
   }
   
-
 /* footer */
 .footer {
     padding: 2em;
@@ -63,7 +63,7 @@ footer nav a.active {
     width: 15em;
 }
 .footer__center {
-    margin-left: -8em;
+    margin-left: -2em;
 }
 .footer__social img {
     width: 2.5em;
@@ -94,9 +94,8 @@ footer nav a.active {
 
 .hero {
     text-align: center;
-    padding-bottom: 4em;
+    padding: 2em 0em;
 }
-
 .hero h1 {
     font-size: 4.4em;
     font-weight: 700;
@@ -104,7 +103,6 @@ footer nav a.active {
     color: var(--primary);
     margin-top: 0.44em;
 }
-
 .hero h2 {
     font-size: 3em;
     font-weight: 600;
@@ -112,7 +110,6 @@ footer nav a.active {
     text-transform: uppercase;
     margin-top: -0.46em;
 }
-
 .hero p {
     font-size: 2em;
     font-weight: 400;
@@ -122,19 +119,16 @@ footer nav a.active {
     margin-top: 1.2em;
     color: #fff;
 }
-
 .hero__divider {
     display: flex;
     justify-content: center;
 }
-
 .hero__divider div{
     height: 0.3em;
     width: 50em;
     background-color: var(--primary);
     margin-bottom: 3.8em;
 }
-
 .heroImg {
     height: 35vh;
     width: 100%;
@@ -156,7 +150,6 @@ footer nav a.active {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
-  
   .heroImg__image {
     position: absolute;
     top: 50%;
@@ -173,7 +166,6 @@ footer nav a.active {
     background-color: var(--light-yellow);
     margin: -2em;
 }
-
 .home__catchphrase-title h2 {
     font-weight: 400;
     text-align: center;
@@ -192,7 +184,6 @@ footer nav a.active {
     margin-top: -3em;
     padding-bottom: 2em;
 }
-
 .home__trailers {
     display: flex;
     justify-content: center;
@@ -219,7 +210,6 @@ footer nav a.active {
     text-decoration: underline;
     color: var(--primary);
 }
-
 .home__about {
     display: flex;
     padding: 4em 2em;
@@ -253,7 +243,6 @@ footer nav a.active {
     color: var(--secondary);
     max-width: 480px;
 }
-
 .home__cta {
     display: flex;
     padding: 6em 2em;
@@ -295,7 +284,6 @@ footer nav a.active {
     cursor: pointer;
     color: #fff;
 }
-
 .home__review {
     background-color: #fff;
     margin: -2em;
@@ -314,7 +302,7 @@ footer nav a.active {
 }
 
 .trailers {
-    padding: 2em;
+    padding: 4em 2em;
 }
 .trailers__header {
     text-align: center;
@@ -341,7 +329,6 @@ footer nav a.active {
     width: 50em;
     background-color: var(--primary);
 }
-
 .trailers__card1 {
     display: flex;
     justify-content: space-between;
@@ -352,7 +339,6 @@ footer nav a.active {
     background-color: #fff;
     margin: -2em;
 }
-
 .trailers__header--card2 {
     text-align: center;
     color: #fff;
@@ -376,7 +362,6 @@ footer nav a.active {
     display: flex;
     margin: -2em;
 }
-
 .trailers__card3 {
     text-align: center;
     display: flex;
@@ -385,7 +370,6 @@ footer nav a.active {
     background-color: #fff;
     color: var(--secondary);
 }
-
 .trailers__card4 {
     text-align: center;
     display: flex;
@@ -394,7 +378,6 @@ footer nav a.active {
     background-color: var(--secondary);
     color: #fff;
 }
-
 .trailers__cta {
     background-color: var(--light-yellow);
     margin: -2em;
@@ -410,7 +393,7 @@ footer nav a.active {
 /* contact page */
 .contact__header {
     text-align: center;
-    padding-top: 1.5em;
+    padding: 3.5em 1.5em;
 }
 .contact__header h1 {
     font-size: 60px;
@@ -450,7 +433,6 @@ footer nav a.active {
     display: flex;
     justify-content: center;
 }
-
 .contact__divider--header div{
     height: 0.3em;
     width: 50em;
@@ -467,6 +449,14 @@ footer nav a.active {
     width: 50em;
     background-color: var(--primary);
     margin-bottom: 3.8em;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    cursor: pointer;
 }
 
 
@@ -560,7 +550,6 @@ footer nav a.active {
     display: flex;
     justify-content: center;
 }
-
 .contact__divider--header div{
     height: 0.3em;
     width: 50em;
@@ -578,7 +567,6 @@ footer nav a.active {
     background-color: var(--primary);
     margin-bottom: 3.8em;
 }
-
 }
 
 @media screen and (max-width: 800px) {
@@ -730,20 +718,20 @@ footer nav a.active {
     }
 
     
-.contact__details img {
-    width:100%;
-    padding-bottom: 1em;
-}
-.contact__details h3 {
-    font-size: 2em;
-}
-.contact__details p {
-    font-size: 1em;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: #fff;
-    margin-top: -1em;
-}
+    .contact__details img {
+        width:100%;
+        padding-bottom: 1em;
+    }
+    .contact__details h3 {
+        font-size: 2em;
+    }
+    .contact__details p {
+        font-size: 1em;
+        letter-spacing: 0;
+        font-weight: 400;
+        color: #fff;
+        margin-top: -1em;
+    }
 
     .footer__center {
         font-size: 0.8em;
@@ -775,5 +763,9 @@ footer nav a.active {
         color: var(--secondary);
         text-align: center;
         padding: 0.5em;
+    }
+
+    .whatsapp {
+        padding: 0.3em;
     }
 }

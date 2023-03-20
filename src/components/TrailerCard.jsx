@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import './TrailerCard.css'
 
 function TrailerCard(props) {
-    const { imageUrl, imageAlt, title, subtitle, list, button } = props;
+    const { imageUrl, imageAlt, title, subtitle, list } = props;
 
     return (
         <div className="TrailerCard">
@@ -11,7 +12,7 @@ function TrailerCard(props) {
             <div className="TrailerCard__list">
                 <li>{list}</li>
             </div>
-            <button>Contact Us</button>
+           <button><Link to="/contact">Contact Us</Link></button>
         </div>
     )
 }

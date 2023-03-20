@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
 import './index.css'
+import WhatsAppPopup from './components/WhatsAppPopup.jsx'
+
 import logo from './assets/teddy-trailers.png';
 import logofooter from './assets/teddy-trailers-logo.png';
 import facebook from './assets/facebook.png';
@@ -20,12 +22,16 @@ function App() {
             <img src={logo} alt="Teddy Trailers" />
           </NavLink>
         </nav>
-        <nav className='header__links'>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="trailers">Trailers</NavLink>
-          <NavLink to="contact">Contact</NavLink>
-        </nav>
+        <div className='header__links'>
+          <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="trailers">Trailers</NavLink>
+            <NavLink to="contact">Contact</NavLink>
+          </nav>
+        </div>
+        <div className='whatsapp'><WhatsAppPopup /></div>
       </header>
+      
       <main>
         <Routes>
           <Route index element={ <Home /> } />

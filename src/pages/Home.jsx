@@ -23,7 +23,7 @@ export default function Home() {
                     <img className='heroImg__image' src={image2}/>
                     </div>
                 </div>
-                <a href="/Trailers"><p>Discover Our Trailers</p></a>
+                <a href="/trailers"><p>Discover Our Trailers</p></a>
             </div>
             <div className="home__catchphrase">
                 <div className="home__catchphrase-title">
@@ -38,7 +38,7 @@ export default function Home() {
                     title="Mobile Stage"
                     subtitle="Take your show on the road with a portable stage."
                     linkText="View Trailers"
-                    linkUrl="/Trailers"
+                    linkUrl="/trailers"
                 />
                 <Trailer 
                     imageUrl={image4}
@@ -46,7 +46,7 @@ export default function Home() {
                     title="Mobile Kitchen"
                     subtitle="Start that food truck business you’ve been dreaming about."
                     linkText="View Trailers"
-                    linkUrl="/Trailers"
+                    linkUrl="/trailers"
                 />
                 <Trailer 
                     imageUrl={image5}
@@ -54,7 +54,7 @@ export default function Home() {
                     title="Mobile Salon"
                     subtitle="Rapidly expand your barber shop and reach new clients."
                     linkText="View Trailers"
-                    linkUrl="/Trailers"
+                    linkUrl="/trailers"
                 />
             </div>
             <div className="home__about">

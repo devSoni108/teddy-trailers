@@ -1,0 +1,57 @@
+.TrailerCard {
+    padding: 4em 2em;
+}
+
+.TrailerCard h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0;
+}
+.TrailerCard h4 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.TrailerCard img {
+    width: 15em;
+    height: auto;
+    border-radius: 0.3em;
+}
+.TrailerCard li {
+    letter-spacing: 0;
+    padding: 1em ;
+    font-size: 0.9em;
+}
+
+.TrailerCard button {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10em;
+    border-style: none;
+    padding: 0.8em 3em;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.TrailerCard a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 1100px) {
+    .TrailerCard {
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {   
+    .TrailerCard li {
+        letter-spacing: 0;
+        padding: 1em 2em;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,22 @@
+.Trailer img {
+    width: 20em;
+    height: auto;
+    border-radius: 2em;
+}
+.Trailer p {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 1020px) {
+    .Trailer img {
+        width: 15em;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Trailer img {
+        width: 14em;
+        height: auto;
+    }
+}
